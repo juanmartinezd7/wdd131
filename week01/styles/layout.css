@@ -23,6 +23,7 @@ body {
 
 nav a {
     flex-wrap: nowrap;
+    display: flex;
 }
 
 
