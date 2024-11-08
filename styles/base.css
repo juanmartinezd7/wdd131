@@ -150,7 +150,7 @@ h2 {
     transform: translateY(-300px);
 }
 
-#devresources {
+ul {
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -161,16 +161,18 @@ h2 {
 
 
 
-#devresorces a {
-    color: #fff;
+ul a {
+    color: blue;
     padding: 1rem;
     text-decoration: none;
 }
 
-#devresources a:hover {
+ul a:hover {
     border: 1px solid #fff;
     text-decoration:underline;
 }
+
+
 
 #year {
 	margin: 0.25rem;
