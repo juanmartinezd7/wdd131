@@ -7,10 +7,10 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-header,
+/*header,
 main {
 	margin: 0 auto;
-}
+}*/
 
 body {
     font-family: "Roboto", serif;
