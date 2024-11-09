@@ -19,6 +19,10 @@ h1 {
     text-align: center;
 }
 
+.highlight {
+    color: yellow;
+}
+
 nav {
     background-color: #36454f;
     margin: 0 auto;
