@@ -44,16 +44,13 @@ function removeTask(taskElement) {
   taskElement.remove();
 }
 
+
 function completeTask(taskElement) {
-  // In this case we need to find the index of the task so we can modify it.
   const taskIndex = tasks.findIndex(
-    (task) => task.detail === taskElement.childNodes[0].innerText
+    (task) => task.detail === taskElement.querySelector('p').innerText
   );
-  // once we have the index we can modify the complete field.
-  // tasks[taskIndex].completed ? false : true is a ternary expression.
-  // If the first part is true (left of the ?), then the value on the left of the : will get returned, otherwise the value on the right of the : will be returned.
-  tasks[taskIndex].completed = tasks[taskIndex].completed ? false : true;
-  // toggle adds a class if it is not there, removes it if it is.
+  // Toggle the completed state
+  tasks[taskIndex].completed = !tasks[taskIndex].completed;
   taskElement.classList.toggle("strike");
   console.log(tasks);
 }
@@ -65,7 +62,7 @@ function manageTasks(event) {
   if (event.target.dataset.action === "delete") {
     removeTask(parent);
   }
-  if (e.target.dataset.action === "complete") {
+  if (event.target.dataset.action === "complete") {
     completeTask(parent);
   }
   console.log(event.currentTarget);
