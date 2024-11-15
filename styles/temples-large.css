@@ -85,14 +85,8 @@
     
 
     main {
-        max-width: max-content;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1rem;
-        margin: 1rem auto;
-        border: 1px solid #bbb;
-        padding: 1rem;
-        justify-content: center;
+      grid-template-columns: 1fr 1fr 1fr;
+       
     }
    
 }
