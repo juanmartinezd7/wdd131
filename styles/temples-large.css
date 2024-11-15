@@ -9,9 +9,9 @@
         padding: 1rem;
     }
 
-  h2 {
+  main h1 {
     position: absolute;
-    top: 190px;
+    top: 180px;
    
   }
 
@@ -75,7 +75,7 @@
         padding: 1rem;
     }
 
-    h2 {
+    main h1 {
         position: absolute;
         top: 190px;
        
