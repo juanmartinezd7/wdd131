@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/object-fit-cover.css">
+</head>
+<body>
+    <main>
+        <h1>object-fit: cover</h1>
+<p>Containers: 200 x 200 | 1:1</p>
+<p>Og. Images: 700 x 300 | 7:3</p>
+
+<div class="grid">
+	<p>CSS: width and height 100%; <strong>distorted</strong>		
+		<span id="nofit"></span>
+
+	</p>
+	<figure>
+		<img src="https://picsum.photos/id/133/700/300/" alt="Placeholder" class="nofit" loading="lazy" width="700" height="300">
+	</figure>
+	<p>CSS: with object-fit: cover; <span id="fit"></span></p>
+	<figure>
+		<img src="https://picsum.photos/id/133/700/300/" alt="Placeholder" class="fit" loading="lazy" width="700" height="300">
+	</figure>
+</div>
+<hr>
+<p>This property forces the image to cover the entire container while maintaining its aspect ratio. This often involves scaling the image,
+   either up or down. If an image has a different aspect ratio than the container (e.g., a square image in a rectangular container), object-fit:
+   cover; will crop parts of the image to make it fit. This cropping can sometimes lead to awkward compositions or cut-off important details.</p>
+    </main>
+    
+</body>
+</html>
