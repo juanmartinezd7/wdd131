@@ -21,7 +21,7 @@ const windSpeed = 4;   // Wind speed in mph
 
 // Check if inputs are valid
 if (isNaN(temperature) || isNaN(windSpeed) || temperature > 50 || windSpeed < 3) {
-    document.getElementById('result').textContent = "Only temperatures ≤ 50°F and wind speeds ≥ 3 mph.";
+    document.getElementById('result').textContent = "N/A";
 } else {
     // Calculate wind chill factor
     const windChill = calculateWindChill(temperature, windSpeed);

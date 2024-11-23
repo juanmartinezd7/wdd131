@@ -15,18 +15,6 @@
         
     }
 
-    #figcapsm {
-        display: none;
-    }
-
-    #figcaplg {
-        display: block;
-    }
-
-
-    .data, .weather {
-        display: none;
-    }
 
     .hero {
         width: 100%;
@@ -42,7 +30,7 @@
 
      
 
-    .datalarge {
+    .data {
         display: block;
         position: absolute;
         width: 400px;
@@ -56,7 +44,7 @@
     }
 
 
-    .weatherlarge {
+    .weather {
         display: block;
         position: absolute;
         width: 400px;
@@ -69,14 +57,16 @@
         right: 30%;
     }
 
-    #h2datal {
+    #h2data {
         
         background-color: rgb(241, 74, 88);
+        border-style: outset;
         
     }
 
-    #h2weatherl {
+    #h2weather {
         background-color: white;
+        border-style: outset;
     }
 
    
@@ -85,7 +75,7 @@
         color: white;
     }
 
-    .titlew {
+    .title {
         font-size: large;
         color: blanchedalmond;
     }
@@ -95,7 +85,11 @@
         color: blanchedalmond;
     }
 
-    #h2weatherl::after{
+    .weather img{
+        display: none;
+    }
+
+    #h2weather::after{
         content: "⛅";
     }
 
