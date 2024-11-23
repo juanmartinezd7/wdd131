@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+header, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: rgb(6, 6, 168);
+    justify-items: center;
+}
+
+main {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: white;
+    justify-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+#figcaplg {
+    display: none;
+}
+
+figcaption {
+    font-size: xx-small;
+}
+
+/* hover effect */
+img:hover {box-shadow: 0 0 50px #333;
+}
+
+h2 {
+    text-align: center;
+}
+
+.weather img{
+    width: 100px;
+    height: 100px;
+}
+
+.data, .weather {
+    justify-items: center;
+}
+
+
+
+span.title{
+    font-weight: bold;
+    padding-right: 9px;
+}
+span.info {
+    font-style: oblique;
+}
+
+.datalarge {
+    display: none;
+}
+
+.weatherlarge {
+    display: none;
+}

@@ -1,0 +1,107 @@
+@media screen and (min-width: 960px) {
+
+    body {
+        font-family: 'Roboto', sans-serif;
+         
+    }
+    
+    header, footer {
+        max-width: 42%;
+        
+    }
+
+    main {
+        max-width: 42%;
+        
+    }
+
+    #figcapsm {
+        display: none;
+    }
+
+    #figcaplg {
+        display: block;
+    }
+
+
+    .data, .weather {
+        display: none;
+    }
+
+    .hero {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+     
+
+    .datalarge {
+        display: block;
+        position: absolute;
+        width: 400px;
+        height: 230px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        top: 20%;
+        left: 30%;
+    }
+
+
+    .weatherlarge {
+        display: block;
+        position: absolute;
+        width: 400px;
+        height: 230px;
+        background-color: rgb(0, 0, 0, .5);
+        border: 1px solid #fff;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        bottom: 30%;
+        right: 30%;
+    }
+
+    #h2datal {
+        
+        background-color: rgb(241, 74, 88);
+        
+    }
+
+    #h2weatherl {
+        background-color: white;
+    }
+
+   
+
+    .info {
+        color: white;
+    }
+
+    .titlew {
+        font-size: large;
+        color: blanchedalmond;
+    }
+
+    .infow {
+        
+        color: blanchedalmond;
+    }
+
+    #h2weatherl::after{
+        content: "⛅";
+    }
+
+    
+
+    
+
+  
+}
