@@ -6,12 +6,14 @@
     }
     
     header, footer {
-        max-width: 42%;
+        max-width: 42.5%;
         
     }
 
     main {
-        max-width: 42%;
+        max-width: 42.5%;
+        background-color: rgb(247, 25, 43);
+        border: hotpink;
         
     }
 
@@ -39,8 +41,17 @@
         border: 1px solid #fff;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        top: 20%;
+        top: 22%;
         left: 30%;
+    }
+
+    .data:hover {box-shadow: 0 0 50px #03011d;
+    }
+
+    .weather:hover {box-shadow: 0 0 50px #333;
+    }
+
+    img:hover {box-shadow: none;
     }
 
 
@@ -59,7 +70,7 @@
 
     #h2data {
         
-        background-color: rgb(241, 74, 88);
+        background-color: rgb(247, 25, 43);
         border-style: outset;
         
     }
@@ -92,10 +103,6 @@
     #h2weather::after{
         content: "⛅";
     }
-
-    
-
-    
 
   
 }

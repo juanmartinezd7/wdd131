@@ -65,3 +65,8 @@ span.info {
 .weatherlarge {
     display: none;
 }
+
+:root {
+    background-color: rgb(171, 187, 201);
+    padding: 3rem;
+}
