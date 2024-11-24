@@ -1,19 +1,16 @@
 @media screen and (min-width: 960px) {
 
-    body {
-        font-family: 'Roboto', sans-serif;
-         
-    }
+    
     
     header, footer {
-        max-width: 42.5%;
+        max-width: 40.3%;
         
     }
 
     main {
-        max-width: 42.5%;
+        max-width: 40.3%;
         background-color: rgb(247, 25, 43);
-        border: hotpink;
+    
         
     }
 

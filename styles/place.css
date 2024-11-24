@@ -1,11 +1,13 @@
 
 :root {
-    background-color: rgb(171, 187, 201);
-    padding: 3rem;
+    --my-blueshwhite: #a0c3cc;
+    --my-darkblue: rgb(6, 6, 168);
+    
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--my-blueshwhite);
     
     
 }
@@ -15,7 +17,7 @@ header, footer {
     margin: 1rem auto;
     border: 1px solid #bbb;
     padding: 1rem;
-    background-color: rgb(6, 6, 168);
+    background-color: var(--my-darkblue);
     justify-items: center;
 }
 
