@@ -101,5 +101,15 @@
         content: "⛅";
     }
 
+    #attrism {
+        display: none;
+    }
+
+    #attrilg {
+        font-size: xx-small;
+        padding-right: 610px;
+    
+    }
+
   
 }
