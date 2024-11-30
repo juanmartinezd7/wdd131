@@ -76,18 +76,28 @@ h2 {
 }
 
 
-.card {
-  width: 400px;
-  height: 400px;
+/*.card {
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}*/
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 .card img {
-  width: 400px;
-  height: 250px;
+  width: 100%;
+  border-radius: 8px;
 }
+
 .card-content {
   padding: 16px;
 }
