@@ -112,13 +112,13 @@ function renderTemples(filter = "all") {
         const dedicatedYear = new Date(temple.dedicated).getFullYear(); // Parse year correctly
         switch (filter) {
             case "before2000":
-                return dedicatedYear < 2000;
+                return dedicatedYear < 1900;
             case "after2000":
                 return dedicatedYear >= 2000;
             case "areaGreater75000":
-                return temple.area >= 74000;
+                return temple.area >= 90000;
             case "areaLess75000":
-                return temple.area < 74000;
+                return temple.area < 10000;
             default:
                 return true; // Show all if "all" filter is selected
         }
