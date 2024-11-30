@@ -21,7 +21,7 @@
     }
 
     
-    .nav-container li:hover {
+    .nav-container a:hover {
         border: 1px solid #fff;
         background-color: gray;
         color: #333;
@@ -37,7 +37,7 @@
 		flex-direction: row;
 	}
 
-	.nav-container li {
+	.nav-container a {
 		display: block;
 		flex: 1 1 100%;
 	}
