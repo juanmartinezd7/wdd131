@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples Display</title>
+    <meta name="description" content="Juan Martinez Temples page for WDD 131: Dynamic Web Fundamentals BYU-Idaho.">
+    <meta name="author" content="Juan Martinez">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <div>
+        <button id="menu">Menu</button>
+    </div>
+
+    <nav class="nav-container">
+      <li><a href="#" data-filter="all" class="active">Home</a></li>
+      <li><a href="#" data-filter="before2000">Old</a></li>
+      <li><a href="#" data-filter="after2000">New</a></li>
+      <li><a href="#" data-filter="areaGreater75000">Large</a></li>
+      <li><a href="#" data-filter="areaLess75000">Small</a></li>
+
+    </nav>
+  </header>
+  <h2 id="activeFilter">Home</h2>
+  <main>
+    <div class="container" id="templesContainer"></div>
+  </main>
+  <footer>
+    <p id="year">©<span id="currentyear"></span> 🌵 WDD 131 🌵 Juan Martinez 🌵 Texas</p>
+    <p id="modified">Last Date Modified:<span id="lastdatemodified"></span></p>
+  </footer>
+</body>
+</html>

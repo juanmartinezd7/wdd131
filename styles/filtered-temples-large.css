@@ -1,0 +1,55 @@
+@media screen and (min-width: 550px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px; /* Space between cards */
+    }
+
+    
+
+    .nav-container {
+        list-style-type: none;
+        background-color: black;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    .nav-container a {
+        padding: 1rem;
+        text-decoration: none;
+        font-size: x-large;
+    }
+
+    
+    .nav-container li:hover {
+        border: 1px solid #fff;
+        background-color: gray;
+        color: #333;
+    }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+   
+
+	.nav-container {
+		flex-direction: row;
+	}
+
+	.nav-container li {
+		display: block;
+		flex: 1 1 100%;
+	}
+    
+    
+}
+
+@media screen and (min-width: 850px) {  
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        gap: 20px; /* Space between cards */
+    }
+   
+}

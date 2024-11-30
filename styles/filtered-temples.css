@@ -1,0 +1,111 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+header, footer {
+  max-width: 100%;
+  margin: 1rem auto;
+  border: 1px solid #bbb;
+  padding: 1rem;
+  background-color: #59a0ec;
+}
+
+
+#menu {
+font-size: 1.5rem;
+border: 0;
+background: none;
+color: #000;
+ position: absolute;
+top: 1rem;
+right: 2rem;
+}
+
+
+#menu::before {
+content: "☰";
+  
+}
+
+#menu.open::before {
+content: "❌";
+  
+}
+
+.nav-container  {
+display: flex;
+flex-direction: column;
+list-style: none;
+background-color: #333;
+color: #fff;
+}
+
+.nav-container li {
+display: none;
+padding: 1rem;
+text-align: center;
+text-decoration: none;
+background-color: black;
+}
+
+.nav-container a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: .5px;
+  text-decoration: none;
+  /*font-size: x-large;*/
+}
+
+.nav-container li:hover {
+background-color: #bbb;
+color: #333;
+font-weight: 700;
+  color: #fff;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open li {
+display: block;
+}
+
+.active::before {
+content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+h2 {
+  text-align: center;
+}
+
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card-content {
+  padding: 16px;
+}
+.card-content h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+.card-content p {
+  margin: 8px 0;
+  color: navy;
+  font-size: 14px;
+}
+
+
+footer {
+  justify-items: center;
+}
