@@ -53,13 +53,6 @@ background-color: black;
 }
 
 
-/*.nav-container a:hover {
-background-color: #bbb;
-color: #333;
-font-weight: 700;
-  color: #fff;
-}*/
-
 .nav-container a:hover,
         .nav-container a.active {
             background-color: gray;
@@ -85,6 +78,7 @@ h2 {
 
 .card {
   width: 400px;
+  height: 400px;
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
