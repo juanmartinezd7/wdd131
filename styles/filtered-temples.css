@@ -89,12 +89,14 @@ h2 {
   border-radius: 8px;
   padding: 16px;
   margin: 16px;
-  width: 300px;
+  width: 410px;
+  height: 400px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 .card img {
-  width: 100%;
+  width: 400px;
+  height: 250px;
   border-radius: 8px;
 }
 
