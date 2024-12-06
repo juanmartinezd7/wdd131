@@ -14,17 +14,87 @@
   <header>
     <h1>Product Review</h1>
   </header>
-  
   <main>
-    <form action="submission confirmation" method="get">
+    <form action="review.html" method="get">
+      <fieldset>
+       
+        <div>
+          <label for="productSelect">Product Name</label>
+          <select id="productSelect" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+          </select>
+        </div>
+      </fieldset>
+        <fieldset>
+          <legend>
+            Overall Rating
+          </legend>
+        <div class="radio-container">
+          <label>
+            <span id="radio-label">☆</span>
+            <input type="radio" name="rating" value="1 star" required>
+          </label>
+        </div>
+        <div class="radio-container">
+          <label>
+            <span id="radio-label">☆☆</span>
+            <input type="radio" name="rating" value="2 stars" required>
+          </label>
+        </div>
+        <div class="radio-container">
+          <label>
+            <span id="radio-label">☆☆☆</span>
+            <input type="radio" name="rating" value="3 stars" required>
+          </label>
+        </div>
+        <div class="radio-container">
+          <label>
+            <span id="radio-label">☆☆☆☆</span>
+            <input type="radio" name="rating" value="4 stars" required>
+          </label>
+        </div>
+        <div class="radio-container">
+          <label>
+            <span id="radio-label">☆☆☆☆☆</span>
+            <input type="radio" name="rating" value="5 stars" required>
+          </label>
+        </div> 
+      </fieldset>  
+      <fieldset>
+          <div>
+            <label for="select-date">Date of Installation</label>
+            <input id="select-date" type="date" name="installation-date" required> 
+          </div>
+      </fieldset>   
+      <fieldset>
         <legend>
-            Product Name
+          Which features did you find useful in the product? <br> (Check all that apply)
         </legend>
-        <select id="div">
-            <option value="select">Choose a Product</option>
-        </select>
+        <div id="check-useful">
+          <label><input type="checkbox" name="durability" value="yes">Durability</label>
+          <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
+          <label><input type="checkbox" name="performance" value="yes">Performance</label>
+          <label><input type="checkbox" name="design" value="yes">Design</label>
+        </div>
+      </fieldset>  
+      <fieldset>
+        <div>
+          <label for="user-review">Written Review<span class="color-higlight">(Optional)</span></label>
+          <textarea name="review" id="user-review"></textarea>
+        </div>
+      </fieldset>   
+      <fieldset>
+        <div>
+          <label for="user-name">Your Name<span class="color-higlight">(Optional)</span></label>
+          <input type="text" id="user-name" name="your-name">
+        </div>
+      </fieldset>   
+      <fieldset>
+        <div id="review-button">
+          <input type="submit" id="submit-button" value="Post Review">
+        </div>
+      </fieldset>        
     </form>
-    
   </main>
   <footer>
     <p id="year">©<span id="currentyear"></span> 🌵 WDD 131 🌵 Juan Martinez 🌵 Texas</p>

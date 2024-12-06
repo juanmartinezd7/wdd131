@@ -1,15 +1,21 @@
-@media screen and (min-width: 550px) {
-    
-    }
-
-    
-
-    
-    
-    
-}
 
 @media screen and (min-width: 850px) {  
   
    
+    header, main, footer {
+        width: 90%;
+    }
+
+    main {
+        justify-self: center;
+        justify-items: center;
+    }
+
+    .radio-container {
+        
+        margin: 20px;          /* Add spacing between options */
+      }
+
+      
+    
 }

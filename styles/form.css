@@ -3,7 +3,7 @@ body {
     margin: 20px;
   }
   
-  header, header, footer {
+header, footer {
     max-width: 100%;
     margin: 1rem auto;
     border: 1px solid #bbb;
@@ -11,13 +11,91 @@ body {
     background-color: #350151;
     justify-items: center;
     color: white;
-  }
+}
 
  
 
-  main {
-    background-color: #d6d6f5;;
-  }
+main {
+    background-color: #d6d6f5;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+#productSelect {
+    width: 99%;
+    padding: 10px;
+}
+
+.radio-container {
+    display: inline-block; /* Or use block for vertical alignment */
+    text-align: center;    /* Center the text above the radio button */
+    margin: 8px;          /* Add spacing between options */
+}
+  
+.radio-label {
+    display: block;        /* Force the label text to be on its own line */
+    margin-bottom: 5px;    /* Space between the label and the radio button */
+}
+  
+input[type="radio"] {
+    display: block;        /* Ensures proper alignment */
+    margin: 0 auto;        /* Centers the radio button under the label */
+}
+
+#select-date {
+    width: 95%;
+    padding: 10px;
+}
+
+#check-useful {
+  display: grid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+fieldset {
+  margin: 1rem 0;
+}
+
+.color-higlight {
+  color: #800000;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+}
+
+#user-name {
+  width: 100%;
+  height: 30px;
+}
+
+#submit-button {
+  width: 50%;
+  height: 40px;
+  font-weight: bold;
+}
+
+#review-button {
+  text-align: center;
+}
+
+#thankyoumessage {
+  justify-self: center;
+}
+
+#reviewCounter {
+  justify-self: center;
+}
+
+
+
+
+
+
+
+ 
 
   
 
