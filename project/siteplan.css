@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+header, footer {
+    max-width: 100%;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: green;
+    justify-items: center;
+    color: white;
+}
+
+ 
+
+main {
+    background-color: grey;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+     position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+    
+    
+#menu::before {
+    content: "☰";
+      
+}
+    
+#menu.open::before {
+    content: "❌";
+      
+}
+
+.nav-container  {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+        
+.nav-container a {
+    display: none;
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+}
+        
+        
+.nav-container a:hover,
+     .nav-container a.active {
+         background-color: #5e5a5a;
+                    
+}
+        
+.container {
+    justify-self: center;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+    
+.active::before {
+    content: "📍";  /* just a wayfinding symbol for the user */
+}
+
+.page-logo {
+    width: 10%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.purposepic {
+    width: 50%;
+}
+
+.purpose-area {
+    padding-left: 10px;
+}
+
+
+
+
+    
