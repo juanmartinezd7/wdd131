@@ -8,15 +8,15 @@ header, footer {
     margin: 1rem auto;
     border: 1px solid #bbb;
     padding: 1rem;
-    background-color: green;
+    background-color: #97b404;
     justify-items: center;
-    color: white;
+    color: black;
 }
 
  
 
 main {
-    background-color: grey;
+    background-color: #cfc4c4;
     padding-top: 3px;
     padding-bottom: 5px;
 }
@@ -86,6 +86,10 @@ main {
     left: 50px;
 }
 
+#title {
+    justify-self: center;
+}
+
 .purposepic {
     width: 50%;
 }
@@ -93,6 +97,11 @@ main {
 .purpose-area {
     padding-left: 10px;
 }
+
+.scenarios {
+    padding-left: 10px;
+}
+    
 
 
 
