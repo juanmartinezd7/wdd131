@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Supply Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .calculator {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Food Supply Calculator</h2>
+        <label for="persons">Number of Persons:</label>
+        <input type="number" id="persons" min="1" placeholder="Enter the number of persons">
+
+        <label for="timePeriod">Select Time Period:</label>
+        <select id="timePeriod">
+            <option value="3">3 Months</option>
+            <option value="6">6 Months</option>
+            <option value="12">1 Year</option>
+        </select>
+
+        <button onclick="calculateFoodSupply()">Calculate</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculateFoodSupply() {
+            const persons = document.getElementById('persons').value;
+            const timePeriod = document.getElementById('timePeriod').value;
+
+            if (persons <= 0 || !timePeriod) {
+                alert("Please enter valid inputs.");
+                return;
+            }
+
+            const periodFactor = timePeriod / 12; // Calculate fraction of the year
+            const valuesPerYear = {
+                wheat: 200,
+                flour: 30,
+                rice: 70,
+                oats: 30,
+                pasta: 30,
+                water: 183
+            };
+
+            const result = {
+                wheat: (valuesPerYear.wheat * periodFactor * persons).toFixed(2),
+                flour: (valuesPerYear.flour * periodFactor * persons).toFixed(2),
+                rice: (valuesPerYear.rice * periodFactor * persons).toFixed(2),
+                oats: (valuesPerYear.oats * periodFactor * persons).toFixed(2),
+                pasta: (valuesPerYear.pasta * periodFactor * persons).toFixed(2),
+                water: (valuesPerYear.water * periodFactor * persons).toFixed(2)
+            };
+
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <p><strong>Food Supply Needed</strong></p>
+                <p><strong>Grains:</strong></p>
+                <p>Wheat: ${result.wheat} Lbs</p>
+                <p>Flour: ${result.flour} Lbs</p>
+                <p>Rice: ${result.rice} Lbs</p>
+                <p>Oats: ${result.oats} Lbs</p>
+                <p>Pasta: ${result.pasta} Lbs</p>
+                <p><strong>Water Storage:</strong></p>
+                <p>Water: ${result.water} Gallons</p>
+            `;
+            
+        }
+    </script>
+</body>
+</html>

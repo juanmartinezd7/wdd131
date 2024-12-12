@@ -1,7 +1,55 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-  }
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.calculator {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333333;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: grey;
+}
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #cfc4c4;
+    border-radius: 5px;
+}
+
+
   
 header, footer {
     max-width: 100%;
@@ -15,20 +63,20 @@ header, footer {
 
  
 
-main {
+/*main {
     background-color: #cfc4c4;
     padding-top: 3px;
     padding-bottom: 5px;
-}
+}*/
 
 #menu {
     font-size: 1.5rem;
     border: 0;
     background: none;
     color: #000;
-     position: absolute;
+    position: absolute;
     top: 1rem;
-    right: 2rem;
+    left: 10rem;
 }
     
     
@@ -65,12 +113,19 @@ main {
          background-color: #5e5a5a;
                     
 }
-     
+        
+/*.container {
+    justify-self: center;
+}*/
+
+/* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
     display: block;
 }
     
-
+/*.active::before {
+    content: "📍";  /* just a wayfinding symbol for the user */
+/*}*/
 
 .page-logo {
     width: 10%;
@@ -81,18 +136,6 @@ main {
 
 #title {
     justify-self: center;
-}
-
-.purposepic {
-    width: 50%;
-}
-
-.purpose-area {
-    padding-left: 10px;
-}
-
-.scenarios {
-    padding-left: 10px;
 }
 
 .sociallinks {
@@ -110,4 +153,5 @@ main {
 .sociallinks a {
     margin: 3px;
 }
+
     

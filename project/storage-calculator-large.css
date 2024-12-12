@@ -5,12 +5,18 @@
         width: 90%;
     }
 
-    main {
+    /*main {
         justify-self: center;
         justify-items: center;
-    
-    }
+    }*/
 
+    /*.container {
+        display: grid;
+        /*grid-template-columns: repeat(2, 1fr); /* Two columns */
+        /*gap: 20px;  Space between cards 
+    }*/
+
+    
 
     .nav-container {
         list-style-type: none;

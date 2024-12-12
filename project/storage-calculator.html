@@ -9,14 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="siteplan.css">
-    <link rel="stylesheet" href="siteplan-large.css">
-    <script src="siteplan.js" defer></script>
+    <link rel="stylesheet" href="storage-calculator.css">
+    <link rel="stylesheet" href="storage-calculator-large.css">
+    <script src="storage-calculator.js" defer></script>
 </head>
 <body>
     <header>
         <header>
-            <h1>Storage Calculator</h1>
+            <div class="logo-heather">
+                <img class="page-logo"src="images/logo.png" alt="Logo">
+                <h1 id="title">Food Storage Calculator</h1>
+            </div>
             <div>
                 <button id="menu">Menu</button>
             </div>
@@ -24,16 +27,39 @@
                 <a href="siteplan.html">Home</a>
                 <a href="resources.html">Resources</a>
                 <a href="ideas.html">Ideas</a>
-          
-              </nav>
+            </nav>
     </header>
-    <main>
-        <h2>#</h2>
-        
-    </main>
+        <div class="calculator">
+            <h2>Food Supply Calculator</h2>
+            <label for="persons">Number of Persons:</label>
+            <input type="number" id="persons" min="1" placeholder="Enter the number of persons">
+             <br>
+            <label for="timePeriod">Select Time Period:</label>
+            <select id="timePeriod">
+                <option value="3">3 Months</option>
+                <option value="6">6 Months</option>
+                <option value="12">1 Year</option>
+            </select>
+    
+            <button onclick="calculateFoodSupply()">Calculate</button>
+    
+            <div class="result" id="result"></div>
+        </div>
     <footer>
         <p id="year">©<span id="currentyear"></span> 🌵 WDD 131 🌵 Juan Martinez 🌵 Texas</p>
         <p id="modified">Last Date Modified:<span id="lastdatemodified"></span></p>
+        <P>Like us @</P>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook_logo20.jpg" alt="facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/tweet_twitter_20.jpg" alt="twitter">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="images/instagram_20.jpg" alt="instagram">
+            </a>
+        </nav>
     </footer>
 </body>
 </html>

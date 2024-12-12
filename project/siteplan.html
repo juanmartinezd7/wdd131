@@ -8,33 +8,203 @@
     <meta name="author" content="Juan Martinez">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="siteplan.css">
-    <link rel="stylesheet" href="siteplan-large.css">
-    <script src="siteplan.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+header, footer {
+    font-family: Roboto, sans-serif;
+    max-width: 100%;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: #97b404;
+    justify-items: center;
+    color: black;
+}
+
+ 
+
+main {
+    background-color: #cfc4c4;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+     position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+    
+    
+#menu::before {
+    content: "☰";
+      
+}
+    
+#menu.open::before {
+    content: "❌";
+      
+}
+
+.nav-container  {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+        
+.nav-container a {
+    display: none;
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+}
+        
+        
+.nav-container a:hover,
+     .nav-container a.active {
+         background-color: #5e5a5a;
+                    
+}
+     
+.open a {
+    display: block;
+}
+    
+
+
+.page-logo {
+    width: 10%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#title {
+    justify-self: center;
+}
+
+.purposepic {
+    width: 50%;
+}
+
+.purpose-area {
+    padding-left: 10px;
+}
+
+.scenarios {
+    padding-left: 10px;
+}
+
+.sociallinks {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;   
+}
+
+.sociallinks nav {
+    width: 1px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.sociallinks a {
+    margin: 3px;
+}
+@media screen and (min-width: 850px) {  
+  
+   
+  header, main, footer {
+      width: 90%;
+  }
+
+  main {
+      justify-self: center;
+      justify-items: center;
+  
+  }
+
+
+  .nav-container {
+      list-style-type: none;
+      background-color: black;
+      margin: 0 auto;
+      max-width: 800px;
+  }
+
+  .nav-container a {
+      padding: 1rem;
+      text-decoration: none;
+      font-size: x-large;
+  }
+
+  
+  .nav-container a:hover {
+      border: 1px solid #fff;
+      background-color: gray;
+      color: #333;
+  }
+
+  #menu {
+      display: none; /* hide hamburger button */
+  }
+
+ 
+
+  .nav-container {
+      flex-direction: row;
+  }
+
+  .nav-container a {
+      display: block;
+      flex: 1 1 100%;
+  }
+
+  .page-logo {
+      width: 9%;
+      position: absolute;
+      top: 50px;
+      left: 185px;
+  }
+
+    
+  
+}
+    </style>
 </head>
 <body>
     <header>
-        <header>
-            <div class="logo-heather">
-                <img class="page-logo"src="images/logo.png" alt="Logo">
-                <h1 id="title">Food Storage Ideas</h1>
-                <p>This title describe the purpose of this page to share ideas and tools on how to store food for a year supply.</p>
-            </div>
-            <div>
-                <button id="menu">Menu</button>
-            </div>
-            <nav class="nav-container">
-                <a href="storage-calculator.html">Storage Calculator</a>
-                <a href="resources.html">Resources</a>
-                <a href="ideas.html">Ideas</a>
-          
-              </nav>
+        <div class="logo-header">
+            <img class="page-logo" src="images/logo.png" alt="Site Logo">
+            <h1 id="title">Food Storage Ideas</h1>
+            <p>Understanding the importance of being prepared for an emergency.</p>
+            <p>Color Schema: For the Header and Footer I will use this green color #97b404 and for the body I will use this grey color #cfc4c4.</p>
+            <p>Typography: For the Header and Footer I will use the "Roboto" font and for the body I will use Arial font.</p>
+        </div>
+        <button id="menu" aria-label="Toggle Navigation Menu">Menu</button>
+        <nav class="nav-container">
+            <a href="storage-calculator.html">Storage Calculator</a>
+            <a href="resources.html">Resources</a>
+            <a href="ideas.html">Ideas</a>
+        </nav>
     </header>
+    
     <main>
         <div class="purpose-area">
         <h2>Our Goal</h2>
-        <p>In this page we will share ideas and tools on how to store food for a year supply, and also other resources like videos and webpages related to store food.</p>
+        <p>Share ideas and tools on how to store food for a year supply, and also other resources like videos and web pages related to food storage.</p>
         <img class="purposepic"src="images/pantry2.jpeg" alt="Pantry">
     </div>
     <div class="scenarios">
@@ -55,20 +225,39 @@
         
     </main>
     <footer>
-        <p id="year">©<span id="currentyear"></span> 🌵 WDD 131 🌵 Juan Martinez 🌵 Texas</p>
-        <p id="modified">Last Date Modified:<span id="lastdatemodified"></span></p>
-        <P>Like us @</P>
+        <p id="year">© <span id="currentyear"></span> 🌵 WDD 131 🌵 Juan Martinez 🌵 Texas</p>
+        <p id="modified">Last Date Modified: <span id="lastdatemodified"></span></p>
+        <p>Like us on:</p>
         <nav class="sociallinks">
-            <a href="https://facebook.com">
-                <img src="images/facebook_logo20.jpg" alt="facebook">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook_logo20.jpg" alt="Visit us on Facebook">
             </a>
-            <a href="https://twitter.com">
-                <img src="images/tweet_twitter_20.jpg" alt="twitter">
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/tweet_twitter_20.jpg" alt="Follow us on Twitter">
             </a>
-            <a href="https://www.instagram.com/">
-                <img src="images/instagram_20.jpg" alt="instagram">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram_20.jpg" alt="Find us on Instagram">
             </a>
         </nav>
     </footer>
+    
+    <script>
+        //
+        document.addEventListener('DOMContentLoaded', () => {
+    const date = new Date();
+    const year = date.getFullYear();
+    document.getElementById('currentyear').textContent = year;
+    document.getElementById('lastdatemodified').textContent = document.lastModified;
+
+    const hamButton = document.querySelector('#menu');
+    const navigation = document.querySelector('.nav-container');
+
+    hamButton.addEventListener('click', () => {
+        navigation.classList.toggle('open');
+        hamButton.classList.toggle('open');
+    });
+});
+
+    </script>
 </body>
 </html>
