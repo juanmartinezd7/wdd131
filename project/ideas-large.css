@@ -5,7 +5,24 @@
         width: 90%;
     }
 
+    main {
+        justify-self: center;
+        justify-items: center;
+    
+    }
 
+    .ideas-area {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .ideaspic {
+        padding-right: 20px;
+    }
+
+   
     .nav-container {
         list-style-type: none;
         background-color: black;
@@ -48,6 +65,8 @@
         left: 185px;
     }
 
-      
+ 
+
+  
     
 }

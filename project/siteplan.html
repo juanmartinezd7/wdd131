@@ -3,197 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SitePlan</title>
+    <title>SitePlan Home Page</title>
     <meta name="description" content="Juan Martinez SitePlan Page for WDD 131: Dynamic Web Fundamentals BYU-Idaho.">
     <meta name="author" content="Juan Martinez">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,400&display=swap" rel="stylesheet">
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
-  
-header, footer {
-    font-family: Roboto, sans-serif;
-    max-width: 100%;
-    margin: 1rem auto;
-    border: 1px solid #bbb;
-    padding: 1rem;
-    background-color: #97b404;
-    justify-items: center;
-    color: black;
-}
-
- 
-
-main {
-    background-color: #cfc4c4;
-    padding-top: 3px;
-    padding-bottom: 5px;
-}
-
-#menu {
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    color: #000;
-     position: absolute;
-    top: 1rem;
-    right: 2rem;
-}
-    
-    
-#menu::before {
-    content: "☰";
-      
-}
-    
-#menu.open::before {
-    content: "❌";
-      
-}
-
-.nav-container  {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    background-color: #333;
-    color: #fff;
-}
-        
-.nav-container a {
-    display: none;
-    color: #fff;
-    padding: 4px;
-    text-align: center;
-    text-decoration: none;
-    background-color: black;
-}
-        
-        
-.nav-container a:hover,
-     .nav-container a.active {
-         background-color: #5e5a5a;
-                    
-}
-     
-.open a {
-    display: block;
-}
-    
-
-
-.page-logo {
-    width: 10%;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-}
-
-#title {
-    justify-self: center;
-}
-
-.purposepic {
-    width: 50%;
-}
-
-.purpose-area {
-    padding-left: 10px;
-}
-
-.scenarios {
-    padding-left: 10px;
-}
-
-
-
-#h2wireframe {
-    justify-self: center;
-}
-
-#large-wireframe {
-    width: 95%;
-    padding-left: 3px;
-}
-
-.sociallinks {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;   
-}
-
-.sociallinks nav {
-    width: 1px;
-    justify-content: center;
-    align-items: center;    
-}
-
-.sociallinks a {
-    margin: 3px;
-}
-@media screen and (min-width: 850px) {  
-  
-   
-  header, main, footer {
-      width: 90%;
-  }
-
-  main {
-      justify-self: center;
-      justify-items: center;
-  
-  }
-
-
-  .nav-container {
-      list-style-type: none;
-      background-color: black;
-      margin: 0 auto;
-      max-width: 800px;
-  }
-
-  .nav-container a {
-      padding: 1rem;
-      text-decoration: none;
-      font-size: x-large;
-  }
-
-  
-  .nav-container a:hover {
-      border: 1px solid #fff;
-      background-color: gray;
-      color: #333;
-  }
-
-  #menu {
-      display: none; /* hide hamburger button */
-  }
-
- 
-
-  .nav-container {
-      flex-direction: row;
-  }
-
-  .nav-container a {
-      display: block;
-      flex: 1 1 100%;
-  }
-
-  .page-logo {
-      width: 9%;
-      position: absolute;
-      top: 50px;
-      left: 185px;
-  }
-
-    
-  
-}
-    </style>
+    <link rel="stylesheet" href="siteplan.css">
+    <link rel="stylesheet" href="siteplan-large.css">
+    <script src="siteplan.js" defer></script>
 </head>
 <body>
     <header>
@@ -201,44 +16,44 @@ main {
             <img class="page-logo" src="images/logo.png" alt="Site Logo">
             <h1 id="title">Food Storage Ideas</h1>
             <p>Understanding the importance of being prepared for an emergency.</p>
-            <p>Color Schema: For the Header and Footer I will use this green color #97b404 and for the body I will use this grey color #cfc4c4.</p>
-            <p>Typography: For the Header and Footer I will use the "Roboto" font and for the body I will use Arial font.</p>
         </div>
         <button id="menu" aria-label="Toggle Navigation Menu">Menu</button>
         <nav class="nav-container">
+            <a href="siteplan.html">Home</a>
             <a href="storage-calculator.html">Storage Calculator</a>
-            <a href="resources.html">Resources</a>
             <a href="ideas.html">Ideas</a>
+            <a href="resources.html">Resources</a>
         </nav>
     </header>
-    
     <main>
+        <h2 id="h2home">Home</h2>
+        <div class="banner">
+            <img class="longpicture" src="images/PantryLong.jpg" alt="Pantrylong" loading="lazy">
+        </div>
         <div class="purpose-area">
-        <h2>Our Goal</h2>
-        <p>Share ideas and tools on how to store food for a year supply, and also other resources like videos and web pages related to food storage.</p>
-        <img class="purposepic"src="images/pantry2.jpeg" alt="Pantry">
-    </div>
-    <div class="scenarios">
-        <h2>Our view</h2>
-        <h3>Why do I need a food storage supply?</h3>
-        <ul>
-            <li>The purpose is to provide for our needs and be prepare for every needful thing in case of an emergency.</li>
-            <li>To be prepare for adversity in life by having a basic supply of food and water and some money in savings.</li>
-        </ul>
-        <h3>What Am I supposed to have in my food storage?</h3>
-        <ul>
-            <li>Food Supply (Three-month and long-term)📆</li>
-            <li>Water Supply💦</li>
-            <li>Financial reserve💰</li>
-        </ul>
-    </div>
-    <div class="wireframe">
-        <h2 id="h2wireframe">Wireframes</h2>
-        <p id="large-wiretext">Large Wireframe</p>
-        <img id="large-wireframe"src="images/SitePlan wireframe desktop.jpg" alt="Large Wireframe">
-        <p id="small-wiretext">Small Wireframe</p>
-        <img id="small-wireframe"src="images/SitePlan wireframe mobile.jpg" alt="Small Wireframe">
-    </div>
+           <h2 id="goal">Our Goal</h2>
+           <p id="textl1">Share ideas and tools on how to store food for a year supply, and also other resources like videos and web pages related to food storage.</p>
+        </div>
+        <div class="purpose-text">
+            <img class="purposepic" src="images/pantry.webp" alt="Pantry" loading="lazy">
+            <p id="textr1">We are accustomed to simply going to the store whenever we need food.<br>
+             But what if one day we can't find the store open? <br>That's why we need to be prepared for <span class="color-higlight">emergencies </span>like that, such as <br>
+             stocking up on essential supplies or learning how to grow our own food. <br> <br>
+             Food storage is a way of decreasing the variability of the food supply in the <br>face of natural, inevitable variability. It allows food to be eaten for some time <br>(typically weeks to months) after harvest rather than solely immediately. </p>
+        <div class="scenarios">
+           <h2>Our view</h2>
+           <h3>Why do I need a food storage supply?</h3>
+           <ul>
+               <li>The purpose is to provide for our needs and be prepare for every needful thing in case of an emergency.</li>
+               <li>To be prepare for adversity in life by having a basic supply of food and water and some money in savings.</li>
+           </ul>
+           <h3>What Am I supposed to have in my food storage?</h3>
+           <ul>
+               <li>Food Supply (Three-month and long-term)📆</li>
+               <li>Water Supply💦</li>
+               <li>Financial reserve💰</li>
+           </ul>
+        </div>
         
         
     </main>
@@ -258,24 +73,5 @@ main {
             </a>
         </nav>
     </footer>
-    
-    <script>
-        //
-        document.addEventListener('DOMContentLoaded', () => {
-    const date = new Date();
-    const year = date.getFullYear();
-    document.getElementById('currentyear').textContent = year;
-    document.getElementById('lastdatemodified').textContent = document.lastModified;
-
-    const hamButton = document.querySelector('#menu');
-    const navigation = document.querySelector('.nav-container');
-
-    hamButton.addEventListener('click', () => {
-        navigation.classList.toggle('open');
-        hamButton.classList.toggle('open');
-    });
-});
-
-    </script>
 </body>
 </html>

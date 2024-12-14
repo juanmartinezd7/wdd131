@@ -3,38 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SitePlan</title>
+    <title>SitePlan Ideas Page</title>
     <meta name="description" content="Juan Martinez SitePlan Page for WDD 131: Dynamic Web Fundamentals BYU-Idaho.">
     <meta name="author" content="Juan Martinez">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="siteplan.css">
-    <link rel="stylesheet" href="siteplan-large.css">
-    <script src="siteplan.js" defer></script>
+    <link rel="stylesheet" href="ideas.css">
+    <link rel="stylesheet" href="ideas-large.css">
+    <script src="ideas.js" defer></script>
 </head>
 <body>
     <header>
         <header>
-            <h1>Ideas</h1>
+            <div class="logo-header">
+                <img class="page-logo" src="images/logo.png" alt="Site Logo">
+                <h1 id="title">Ideas</h1>
+                <p>Understanding the importance of being prepared for an emergency.</p>
+            </div>
             <div>
                 <button id="menu">Menu</button>
             </div>
             <nav class="nav-container">
                 <a href="siteplan.html">Home</a>
                 <a href="storage-calculator.html">Storage Calculator</a>
+                <a href="ideas.html">Ideas</a>
                 <a href="resources.html">Resources</a>
-                
-          
-              </nav>
+            </nav>
     </header>
     <main>
-        <h2>#</h2>
-        
+        <h2 id="h2ideas">Ideas</h2>
+        <div class="piclong">
+            <img class="longpicture" src="images/Kit.jpg" alt="Pantrylong" loading="lazy">
+        </div>
+        <div id="textlong">
+            <p>In the last few years, many have struggled through a pandemic, natural disasters, and shortages across the country. I think now more than ever it
+                is time for people from all walks of life to start thinking about how to take control of their food supply.
+                Individuals and families should be prepared to take care of themselves and their loved ones in the event of a disaster or emergency. <br> <br>
+                Emergencies can be natural disasters, a pandemic, the loss of a job, or a major injury. Many things can fall into this category. Having your food 
+                stored long-term means that you will have less to worry about at the time something like this occurs.
+            </p>
+        </div>
+        <div class="ideas-area">
+            <img class="ideaspic" src="images/Food-Pantry.jpg" alt="Food Pantry" loading="lazy">
+            <ul id="textr1">
+                <br> 
+                <li>It's a good idea to store food in small size containers rather than bulk size quantities.</li>
+                <br> <br> <br>
+                <li>It's a good idea to store food that doesn't require too much water to be prepare. </li>
+                <br> <br> <br>
+                <li>Instead buy prepared food like a can of Campbell's Hearty Chicken Soup then it already has everything packaged into the can.</li>
+                <br> <br> <br>
+                <li>Food rotation is important to preserve freshness. When food is rotated, the food that has been in storage the longest is used first. As food is used, new food is added to the pantry to replace it</li>
+                <br> <br> <br>
+                <li>Store at least half gallon of water per day for each person</li>
+                <br> <br> <br>
+                <li>Other Items: Batteries, candles, and flashlights; cleaning supplies and paper products; personal hygiene; cash; first aid; disinfectant; fuel storage; Propane.</li>
+
+            </ul>
+        </div>
+        <div>
+            <p id="textbottom">Building up a well-stocked and functional food storage system is a key skill and resource anyone should be developing, whether you’re a prepper or a homesteader… or not! Having one month, one year or 25 years of food storage is a good idea for so many reasons. <br> <br>
+                Having a long-term emergency food supply doesn’t always mean buying and storing staple items in bulk, canning your own meat or beans, preserving all your eggs, freezing or freeze-drying milk, or even raising and butchering your own meat and growing all your veggies (even though that might be your eventual goal). <br> <br>
+                Rather, having a long-term food supply available means you will save money and time, have greater food security and create less waste in your household. <br> <br>
+                Not to mention, as in present times, if/when a crisis arises, you will be prepared for inflation and will not need to panic shop when food sources are slim. On Being prepared for an emergency, a long-term food supply is a significant portion of that preparedness.
+            </p>
+        </div>
     </main>
     <footer>
-        <p id="year">©<span id="currentyear"></span> 🌵 WDD 131 🌵 Juan Martinez 🌵 Texas</p>
-        <p id="modified">Last Date Modified:<span id="lastdatemodified"></span></p>
+        <p id="year">© <span id="currentyear"></span> 🌵 WDD 131 🌵 Juan Martinez 🌵 Texas</p>
+        <p id="modified">Last Date Modified: <span id="lastdatemodified"></span></p>
+        <p>Like us on:</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook_logo20.jpg" alt="Visit us on Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/tweet_twitter_20.jpg" alt="Follow us on Twitter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram_20.jpg" alt="Find us on Instagram">
+            </a>
+        </nav>
     </footer>
 </body>
 </html>

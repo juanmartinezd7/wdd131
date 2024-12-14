@@ -5,7 +5,13 @@
         width: 90%;
     }
 
+    main {
+        justify-self: center;
+        justify-items: center;
+    
+    }
 
+   
     .nav-container {
         list-style-type: none;
         background-color: black;
@@ -48,6 +54,6 @@
         left: 185px;
     }
 
-      
+  
     
 }

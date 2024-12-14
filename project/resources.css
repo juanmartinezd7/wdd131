@@ -21,22 +21,9 @@ main {
     padding-bottom: 5px;
 }
 
-#h2home {
-    padding-left: 10px;
-}
-
-.banner {
-    display: flex;
-    justify-content: center;
-}
-.longpicture {
-    width: 95%;
-    height: 10%;
-}
-
 
 .color-higlight {
-    color: #000080;
+    color: red;
   }
 
 #menu {
@@ -90,6 +77,10 @@ main {
 }
 
 
+#title {
+    justify-self: center;
+}
+
 .page-logo {
     width: 10%;
     position: absolute;
@@ -97,35 +88,6 @@ main {
     left: 50px;
 }
 
-#title {
-    justify-self: center;
-}
-
-.purposetext {
-    position: relative;
-    width: 70%;
-    left: 15%;
-    top: 20%;
-    padding: 30px;
-}
-
-.purposepic {
-    float: right;
-    width: 40%;
-    padding-right: 40px;
-    padding-left: 3px;
-}
-
-
-
-.purpose-area {
-    padding-left: 10px;
-}
-
-.scenarios {
-    padding-left: 10px;
-    margin-top: -10px;
-}
 
 .sociallinks {
     display: flex;
@@ -143,12 +105,13 @@ main {
     margin: 3px;
 }
     
+.resources img {
+    padding: 4px;
+    background-color: black;
+    }
 
-#textr1 {
-    font-weight: bold;
-    padding-left: 20px;
-}
-
-
-
-
+.resources img:hover,
+        .resources img.active {
+            background-color: #5e5a5a;
+            
+        }

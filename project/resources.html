@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SitePlan</title>
+    <title>SitePlan Resources Page</title>
     <meta name="description" content="Juan Martinez SitePlan Page for WDD 131: Dynamic Web Fundamentals BYU-Idaho.">
     <meta name="author" content="Juan Martinez">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="siteplan.css">
-    <link rel="stylesheet" href="siteplan-large.css">
-    <script src="siteplan.js" defer></script>
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="resouces-large.css">
+    <script src="resources.js" defer></script>
 </head>
 <body>
     <header>
         <header>
-            <h1>Resources</h1>
+            <div class="logo-header">
+                <img class="page-logo" src="images/logo.png" alt="Site Logo">
+                <h1 id="title">Resources</h1>
+                <p>Understanding the importance of being prepared for an emergency.</p>
+            </div>
             <div>
                 <button id="menu">Menu</button>
             </div>
@@ -24,16 +28,40 @@
                 <a href="siteplan.html">Home</a>
                 <a href="storage-calculator.html">Storage Calculator</a>
                 <a href="ideas.html">Ideas</a>
-          
-              </nav>
+                <a href="resources.html">Resources</a>
+            </nav>
     </header>
     <main>
-        <h2>#</h2>
-        
+        <h2>Availiable Resources</h2>
+        <ul class="resources">
+            <li><p>The Church of Jesus Christ of Latter-Day Saints</p><a href="https://www.churchofjesuschrist.org/study/manual/gospel-topics/food-storage?lang=eng" target="_blank">
+            <img alt="Church Logo" src="images/TheChurchOfJesusChrist.PNG" width="150px"></a></li>
+            <li><p>U.S. Centers for Disease Control and Prevention</p><a href="https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html#:~:text=During%20a%20water%2Drelated%20emergency,per%20day%20for%20each%20person." target="_blank">
+            <img alt = "CDC Logo" src="images/cdc-logo-tag-right.svg" width="200px"></a></li>
+            <li><p>Ready ✔ An official website of the United States government</p><a href="https://www.ready.gov/" target="_blank">
+            <img alt = "Ready Logo" src="images/logo_ready_green.png" width="100px"></a></li>
+            <li><p>American Red Cross</p><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/survival-kit-supplies.html?srsltid=AfmBOorQXyO2n6SyveJChKAQil_TEl_4F0q2dLn3A64VO9YFPAB8EJvi" target="_blank">
+            <img alt = "Red Cross Logo" src="images/redcross-logo.png.img.png" width="150px"></a></li>
+            <li><p>Utah State University</p><a href="https://extension.usu.edu/preserve-the-harvest/research/food-storage-in-home" target="_blank">
+            <img alt = "Utah State Logo" src="images/utah-state-logo-350.png" width="200px"></a></li>
+            
+        </ul> 
     </main>
     <footer>
-        <p id="year">©<span id="currentyear"></span> 🌵 WDD 131 🌵 Juan Martinez 🌵 Texas</p>
-        <p id="modified">Last Date Modified:<span id="lastdatemodified"></span></p>
+        <p id="year">© <span id="currentyear"></span> 🌵 WDD 131 🌵 Juan Martinez 🌵 Texas</p>
+        <p id="modified">Last Date Modified: <span id="lastdatemodified"></span></p>
+        <p>Like us on:</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook_logo20.jpg" alt="Visit us on Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/tweet_twitter_20.jpg" alt="Follow us on Twitter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram_20.jpg" alt="Find us on Instagram">
+            </a>
+        </nav>
     </footer>
 </body>
 </html>
