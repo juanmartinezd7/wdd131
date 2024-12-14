@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+header, footer {
+    font-family: Roboto;
+    max-width: 100%;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: #97b404;
+    justify-items: center;
+    color: black;
+}
+
+ 
+
+main {
+    background-color: #cfc4c4;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+#h2home {
+    padding-left: 10px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+.longpicture {
+    width: 95%;
+    height: 10%;
+}
+
+
+.color-higlight {
+    color: #000080;
+  }
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+     position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+    
+    
+#menu::before {
+    content: "☰";
+      
+}
+    
+#menu.open::before {
+    content: "❌";
+      
+}
+
+.nav-container  {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+        
+.nav-container a {
+    display: none;
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+}
+        
+        
+.nav-container a:hover,
+     .nav-container a.active {
+         background-color: #5e5a5a;
+                    
+}
+        
+
+.open a {
+    display: block;
+}
+
+
+.page-logo {
+    width: 10%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#title {
+    justify-self: center;
+}
+
+.purposetext {
+    position: relative;
+    width: 70%;
+    left: 15%;
+    top: 20%;
+    padding: 30px;
+}
+
+.purposepic {
+    float: right;
+    width: 40%;
+    padding-right: 40px;
+    padding-left: 3px;
+}
+
+
+
+.purpose-area {
+    padding-left: 10px;
+}
+
+.scenarios {
+    padding-left: 10px;
+    margin-top: -10px;
+}
+
+.sociallinks {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;   
+}
+
+.sociallinks nav {
+    width: 1px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.sociallinks a {
+    margin: 3px;
+}
+    
+
+#textr1 {
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.registration-form {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"], [type="email"] {
+    display: block;        /* Ensures proper alignment */
+}
+
+#register-button {
+    width: 70%;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #000080;
+    padding-top: 7px;
+    justify-self: center;
+  }
+  
+  #thankstext {
+    justify-self: center;
+  }
+
+  .smallwireframe {
+    padding-left: 30px;
+    justify-content: center;
+
+  }
+
+  .largewireframe {
+    padding-left: 30px;
+    justify-content: center;
+
+  }
+
+  #lwireframe {
+    width: 90%;
+  }
+  
+
+
+
