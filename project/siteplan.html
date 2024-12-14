@@ -6,6 +6,9 @@
     <title>SitePlan Home Page</title>
     <meta name="description" content="Juan Martinez SitePlan Page for WDD 131: Dynamic Web Fundamentals BYU-Idaho.">
     <meta name="author" content="Juan Martinez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="siteplan.css">
     <link rel="stylesheet" href="siteplan-large.css">
     <script src="siteplan.js" defer></script>
@@ -53,6 +56,28 @@
                <li>Water Supply💦</li>
                <li>Financial reserve💰</li>
            </ul>
+           <div class="registration-form">
+            <form action="signup.html" method="get">
+                <fieldset>
+                    <h3>Please <span class="color-higlight">Sign Up</span> For Our News Letter</h3>
+                    <div>
+                      <label for="fname">Fist Name: </label>
+                      <input type="text" id="fname" name="first-name" placeholder="First Name" required>
+                    </div>
+                    <div>
+                      <label for="lname">Last Name:</label>
+                      <input type="text" id="lname" name="last-name" placeholder="Last Name" required>
+                    </div>
+                    <div>
+                        <label for="email">E-Mail:</label>
+                        <input type="email" id="email" name="email" placeholder="someone@email.com" required>
+                      </div>
+                    <div id="register-button">
+                        <input type="submit" id="register-button" value="Sign Me Up">
+                      </div>
+                </fieldset>  
+            </form>
+           </div>
         </div>
         
         

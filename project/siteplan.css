@@ -4,6 +4,7 @@ body {
   }
   
 header, footer {
+    font-family: Roboto;
     max-width: 100%;
     margin: 1rem auto;
     border: 1px solid #bbb;
@@ -149,6 +150,29 @@ main {
     padding-left: 20px;
 }
 
+.registration-form {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"], [type="email"] {
+    display: block;        /* Ensures proper alignment */
+}
+
+#register-button {
+    width: 70%;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #000080;
+    padding-top: 7px;
+    justify-self: center;
+  }
+  
+  #thankstext {
+    justify-self: center;
+  }
+  
 
 
 

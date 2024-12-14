@@ -13,25 +13,6 @@
     }
 
 
-    /*.purpose-text {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
-        
-    
-
-    /*.gardening {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
-    
-
-    /*.purposepic2 {
-        width: 60%;
-        height: 75%;
-        
-        padding-right: 30px;
-    }*/
-
-
     .nav-container {
         list-style-type: none;
         background-color: black;
@@ -74,15 +55,6 @@
         left: 185px;
     }
 
-    /*.purposepic {
-        width: 75%;
-        height: 75%;
-        padding-left: 30px;
-    }*/
-
-    /*#gardeningtext {
-        padding-left: 50px;
-    }*/
       
     
 }
