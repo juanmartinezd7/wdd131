@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SitePlan Home Page</title>
+    <meta name="description" content="Juan Martinez SitePlan Page for WDD 131: Dynamic Web Fundamentals BYU-Idaho.">
+    <meta name="author" content="Juan Martinez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="siteplan.css">
+    <link rel="stylesheet" href="siteplan-large.css">
+    <script src="siteplan.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-header">
+            <img class="page-logo" src="images/logo.png" alt="Site Logo">
+            <h1 id="title">Food Storage Ideas</h1>
+            <p>Understanding the importance of being prepared for an emergency.</p>
+        </div>
+        <button id="menu" aria-label="Toggle Navigation Menu">Menu</button>
+        <nav class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="storage-calculator.html">Storage Calculator</a>
+            <a href="ideas.html">Ideas</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+    <main>
+        <h2 id="h2home">Home</h2>
+        <div class="banner">
+            <img class="longpicture" src="images/PantryLong.jpg" alt="Pantrylong" loading="lazy">
+        </div>
+        <div class="purpose-area">
+           <h2 id="goal">Our Goal</h2>
+           <p id="textl1">Share ideas and tools on how to store food for a year supply, and also other resources like videos and web pages related to food storage.</p>
+        </div>
+        <div class="purpose-text">
+            <img class="purposepic" src="images/pantry.webp" alt="Pantry" loading="lazy">
+            <p id="textr1">We are accustomed to simply going to the store whenever we need food.<br>
+             But what if one day we can't find the store open? <br>That's why we need to be prepared for <span class="color-higlight">emergencies </span>like that, such as <br>
+             stocking up on essential supplies or learning how to grow our own food. <br> <br>
+             Food storage is a way of decreasing the variability of the food supply in the <br>face of natural, inevitable variability. It allows food to be eaten for some time <br>(typically weeks to months) after harvest rather than solely immediately. </p>
+        <div class="scenarios">
+           <h2>Our view</h2>
+           <h3>Why do I need a food storage supply?</h3>
+           <ul>
+               <li>The purpose is to provide for our needs and be prepare for every needful thing in case of an emergency.</li>
+               <li>To be prepare for adversity in life by having a basic supply of food and water and some money in savings.</li>
+           </ul>
+           <h3>What Am I supposed to have in my food storage?</h3>
+           <ul>
+               <li>Food Supply (Three-month and long-term)📆</li>
+               <li>Water Supply💦</li>
+               <li>Financial reserve💰</li>
+           </ul>
+           <div class="registration-form">
+            <form action="signup.html" method="get">
+                <fieldset>
+                    <h3>Please <span class="color-higlight">Sign Up</span> For Our News Letter</h3>
+                    <div>
+                      <label for="fname">Fist Name: </label>
+                      <input type="text" id="fname" name="first-name" placeholder="First Name" required>
+                    </div>
+                    <div>
+                      <label for="lname">Last Name:</label>
+                      <input type="text" id="lname" name="last-name" placeholder="Last Name" required>
+                    </div>
+                    <div>
+                        <label for="email">E-Mail:</label>
+                        <input type="email" id="email" name="email" placeholder="someone@email.com" required>
+                      </div>
+                    <div id="register-button">
+                        <input type="submit" id="register-button" value="Sign Me Up">
+                      </div>
+                </fieldset>  
+            </form>
+           </div>
+        </div>
+        
+        
+    </main>
+    <footer>
+        <p id="year">© <span id="currentyear"></span> 🌵 WDD 131 🌵 Juan Martinez 🌵 Texas</p>
+        <p id="modified">Last Date Modified: <span id="lastdatemodified"></span></p>
+        <p>Like us on:</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook_logo20.jpg" alt="Visit us on Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/tweet_twitter_20.jpg" alt="Follow us on Twitter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram_20.jpg" alt="Find us on Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
