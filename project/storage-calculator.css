@@ -70,7 +70,8 @@ header, footer {
     color: #000;
     position: absolute;
     top: 1rem;
-    left: 10rem;
+    right: 2rem;
+    cursor: pointer;
 }
     
     

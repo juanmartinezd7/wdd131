@@ -23,9 +23,7 @@ main {
 }
 
 
-.color-higlight {
-    color: red;
-  }
+
 
 #menu {
     font-size: 1.5rem;
@@ -35,6 +33,7 @@ main {
      position: absolute;
     top: 1rem;
     right: 2rem;
+    cursor: pointer;
 }
     
     

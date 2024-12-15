@@ -36,8 +36,9 @@ main {
 }
 
 
-.color-higlight {
-    color: #000080;
+.higlight {
+    font-style: italic;
+    font-weight: bolder;
   }
 
 #menu {
@@ -48,6 +49,7 @@ main {
      position: absolute;
     top: 1rem;
     right: 2rem;
+    cursor: pointer;
 }
     
     

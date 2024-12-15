@@ -42,10 +42,6 @@ main {
 }
 
 
-.color-higlight {
-    color: red;
-  }
-
 #menu {
     font-size: 1.5rem;
     border: 0;
@@ -54,6 +50,7 @@ main {
      position: absolute;
     top: 1rem;
     right: 2rem;
+    cursor: pointer;
 }
     
     
