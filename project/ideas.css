@@ -47,7 +47,7 @@ main {
     border: 0;
     background: none;
     color: #000;
-     position: absolute;
+    position: absolute;
     top: 1rem;
     right: 2rem;
     cursor: pointer;
